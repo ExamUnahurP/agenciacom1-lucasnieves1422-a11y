@@ -2,7 +2,7 @@ import agenciaDeViajes.*
 describe "Test de Agencia"{
     test "un pack nacional sin beneficios vigentes devuele el mismo precio base"{
         const beneficioEspecialPrueba = new BeneficiosEspeciales(costo = 0,estaVigente = false)
-        
+         
     
     }
 
