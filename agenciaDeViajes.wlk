@@ -18,8 +18,9 @@ class Pack{
     var destinoDeViaje
     method destinoDeViaje() = destinoDeViaje
     method precioTotal() = precioBase + todosLosBeneficios.sum(costo)
-
 }
+
+
 
 class Nacionales inherits Pack{
     const actividadesIncluidas = []
@@ -68,7 +69,9 @@ class BeneficiosEspeciales{
     method costo() = costo
 }
 
-class Provinciales
+class Provinciales inherits Nacionales{
+    cantDeViajesAVisitar
+}
 
 
 
