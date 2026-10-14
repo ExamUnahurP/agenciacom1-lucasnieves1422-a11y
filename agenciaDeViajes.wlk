@@ -10,19 +10,20 @@ object viajesSinFronteras{
     }
 }
 
-class Nacionales{
-    var duracionDeDias
-    
-    var cordinadorAsignado
+class Pack{
+    const duracionDeDias 
+    var precioBase
+    var todosLosBeneficios
+    var cordinadorACargo
+}
+
+class Nacionales inherits Pack{
     var destinoDeViaje
     method destinoDeViaje() = destinoDeViaje
     const actividadesIncluidas = []
 }
 
-class Internacionales{
-    var duracionDeDias
-    
-    var cordinadorAsignado
+class Internacionales inherits Pack{
     var destinoDeViaje
     method destinoDeViaje() = destinoDeViaje
     var cantidadDeEscalas
@@ -31,7 +32,7 @@ class Internacionales{
 
 class Cordinador{
     var cantDeViajesRealizados
-    var estaMotivado
+    var estaMotivado 
     var aniosDeExperiencia
     var rol
     const rolesValidos = [guia,asistenteLogistico,acompaniante]
@@ -55,6 +56,21 @@ object asistenteLogistico{
 object acompaniante{
 
 }
+
+class BeneficiosEspeciales{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
