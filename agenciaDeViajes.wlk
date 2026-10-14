@@ -56,6 +56,10 @@ class BeneficiosEspeciales{
     const tiposDeBeneficiosOpcionales = ["Traslados privados","acceso a salas VIP","Seguros adicionales"]
     var costo
     var estaVigente
+    method precioTotalDeBeneficio() =
+        if(!estaVigente){
+            costo = 0
+        } 
     method costo() = costo
 }
 
