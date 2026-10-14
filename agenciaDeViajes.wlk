@@ -15,6 +15,7 @@ class Pack{
     var precioBase
     var todosLosBeneficios
     var cordinadorACargo
+
 }
 
 class Nacionales inherits Pack{
@@ -45,20 +46,14 @@ class Cordinador{
     }
 }
 
-object guia{
-
-}
-
-object asistenteLogistico{
-
-}
-
-object acompaniante{
-
-}
+object guia{}
+object asistenteLogistico{}
+object acompaniante{}
 
 class BeneficiosEspeciales{
-    
+    const tiposDeBeneficiosOpcionales = ["Traslados privados","acceso a salas VIP","Seguros adicionales"]
+    var costo
+    var estaVigente
 }
 
 
