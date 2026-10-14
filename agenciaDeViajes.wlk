@@ -15,6 +15,7 @@ class Pack{
     var precioBase
     var todosLosBeneficios
     var cordinadorACargo
+    method precioTotal() = precioBase + todosLosBeneficios.costo()
 
 }
 
@@ -22,6 +23,7 @@ class Nacionales inherits Pack{
     var destinoDeViaje
     method destinoDeViaje() = destinoDeViaje
     const actividadesIncluidas = []
+    
 }
 
 class Internacionales inherits Pack{
@@ -54,6 +56,7 @@ class BeneficiosEspeciales{
     const tiposDeBeneficiosOpcionales = ["Traslados privados","acceso a salas VIP","Seguros adicionales"]
     var costo
     var estaVigente
+    method costo() = costo
 }
 
 
