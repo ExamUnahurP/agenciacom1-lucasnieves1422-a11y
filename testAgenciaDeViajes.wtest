@@ -1,9 +1,15 @@
 import agenciaDeViajes.*
+
 describe "Test de Agencia"{
     test "un pack nacional sin beneficios vigentes devuele el mismo precio base"{
         const beneficioEspecialPrueba = new BeneficiosEspeciales(costo = 0,estaVigente = false)
-         
-    
-    }
 
+        const juan = new Cordinador(cantDeViajesRealizados = 2,estaMotivado = true, aniosDeExperiencia = 2,rol = guia)
+
+        const packNacionalPrueba = new Nacionales(duracionDeDias = 11,precioBase = 14,todosLosBeneficios = beneficioEspecialPrueba,cordinadorACargo = juan,destinoDeViaje = "palermo")
+        assert equals(14, packNacionalPrueba.precioTotal())
+    }
+    test ""{
+        
+    }
 }

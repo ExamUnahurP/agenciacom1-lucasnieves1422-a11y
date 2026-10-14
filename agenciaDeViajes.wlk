@@ -15,20 +15,18 @@ class Pack{
     var precioBase
     var todosLosBeneficios
     var cordinadorACargo
+    var destinoDeViaje
+    method destinoDeViaje() = destinoDeViaje
     method precioTotal() = precioBase + todosLosBeneficios.costo()
 
 }
 
 class Nacionales inherits Pack{
-    var destinoDeViaje
-    method destinoDeViaje() = destinoDeViaje
     const actividadesIncluidas = []
     override method precioTotal() = super + (self.precioBase() / 20)
 }
 
 class Internacionales inherits Pack{
-    var destinoDeViaje
-    method destinoDeViaje() = destinoDeViaje
     var cantidadDeEscalas
     var esLugarDeInteres
 }
