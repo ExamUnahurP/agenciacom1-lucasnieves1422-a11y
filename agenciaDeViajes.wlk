@@ -13,11 +13,11 @@ object viajesSinFronteras{
 class Pack{
     const duracionDeDias 
     var precioBase
-    var todosLosBeneficios
+    const todosLosBeneficios = []
     var cordinadorACargo
     var destinoDeViaje
     method destinoDeViaje() = destinoDeViaje
-    method precioTotal() = precioBase + todosLosBeneficios.costo()
+    method precioTotal() = precioBase + todosLosBeneficios.sum(costo)
 
 }
 

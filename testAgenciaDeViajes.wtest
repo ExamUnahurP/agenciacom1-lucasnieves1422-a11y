@@ -9,7 +9,10 @@ describe "Test de Agencia"{
         const packNacionalPrueba = new Nacionales(duracionDeDias = 11,precioBase = 14,todosLosBeneficios = beneficioEspecialPrueba,cordinadorACargo = juan,destinoDeViaje = "palermo")
         assert equals(14, packNacionalPrueba.precioTotal())
     }
-    test ""{
-        
+    test "un pack nacional con 2 beneficios vigentes suma correctamente sus cosos al precio base "{
+        const beneficio1 = new BeneficiosEspeciales(costo 100,estaVigente = true,)
+        const beneficio2 = new BeneficiosEspeciales(costo 100,estaVigente = true,)
+        const packNacionalPrueba2 = new nacional(duracionDeDias = 2, precioBase = 55,todosLosBeneficios = [beneficio1,beneficio2])
+
     }
 }
