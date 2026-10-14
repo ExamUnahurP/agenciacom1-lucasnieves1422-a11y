@@ -23,7 +23,7 @@ class Nacionales inherits Pack{
     var destinoDeViaje
     method destinoDeViaje() = destinoDeViaje
     const actividadesIncluidas = []
-    
+    override method precioTotal() = super + (self.precioBase() / 20)
 }
 
 class Internacionales inherits Pack{
