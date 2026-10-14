@@ -11,9 +11,14 @@ describe "Test de Agencia"{
     }
     test "un pack nacional con 2 beneficios vigentes suma correctamente sus cosos al precio base "{
         const beneficio1 = new BeneficiosEspeciales(costo 100,estaVigente = true,)
+        
         const beneficio2 = new BeneficiosEspeciales(costo 100,estaVigente = true,)
-        const packNacionalPrueba2 = new nacional(duracionDeDias = 2, precioBase = 55,todosLosBeneficios = [beneficio1,beneficio2])
-        assert equals(255)
+        
+        const leo = new Cordinador(cantDeViajesRealizados = 5,estaMotivado = true,aniosDeExperiencia = 3,rol = guia)
+        
+        const packNacionalPrueba2 = new nacional(duracionDeDias = 2, precioBase = 55,todosLosBeneficios = [beneficio1,beneficio2],cordinadorACargo = leo, destinoDeViaje = "moron" )
+        
+        assert equals(255,packNacionalPrueba2)
 
     }
 }

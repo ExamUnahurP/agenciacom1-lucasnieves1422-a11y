@@ -36,6 +36,7 @@ class Cordinador{
     var estaMotivado 
     var aniosDeExperiencia
     var rol
+    method esAltamenteCertificado() = cantDeViajesRealizados > 20 && rol.esCertificado()
     const rolesValidos = [guia,asistenteLogistico,acompaniante]
     method cambiarDeRol(unRol){
         if(rolesValidos.contains(unRol)){
@@ -46,9 +47,15 @@ class Cordinador{
     }
 }
 
-object guia{}
-object asistenteLogistico{}
-object acompaniante{}
+object guia{
+    method esCertificado() = Cordinador.estaMotivado
+}
+object asistenteLogistico{
+    method esCertificado() = Cordinador.aniosDeExperiencia > 3
+}
+object acompaniante{
+    method esCertificado(){}
+}
 
 class BeneficiosEspeciales{
     const tiposDeBeneficiosOpcionales = ["Traslados privados","acceso a salas VIP","Seguros adicionales"]
@@ -61,6 +68,7 @@ class BeneficiosEspeciales{
     method costo() = costo
 }
 
+class Provinciales
 
 
 
